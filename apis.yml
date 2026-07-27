@@ -1,8 +1,27 @@
 aid: inversion-space
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/inversion-space.png
 name: Inversion Space
-description: 'Inversion Space is a company surfaced as a portfolio company of homebrew, kindred-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: aerospace-defense. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Inversion Space is a Los Angeles-based aerospace and defense company
+  founded in 2021 by Justin Fiaschetti and Austin Briggs, building autonomous, reusable,
+  and low-cost reentry vehicles that turn space into a global logistics network. Its
+  Arc vehicle is designed to store cargo in orbit and deliver a 500-pound payload to
+  anywhere on Earth in under an hour, while its first spacecraft, Ray, validated key
+  reentry subsystems. The company also develops hypersonic test capabilities and space-based
+  interceptor technology, partnering with Anduril on the Golden Dome program and Kratos
+  on the MACH-TB 2.0 hypersonic test program, backed by a $71M U.S. Space Force contract.
+  It is in the API Evangelist network as a company profile; no public developer API,
+  documentation, or SDK surface was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/inversion-space/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Aerospace Defense
+- Space
+- Reentry Vehicles
+- Logistics
+- Hypersonics
+- Defense
+- Space Logistics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +49,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/inversion-space-domain-security.yml
 - type: Website
   url: https://www.inversionspace.com
+- type: Blog
+  url: https://www.inversionspace.com/news
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
